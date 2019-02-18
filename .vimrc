@@ -69,7 +69,6 @@ NeoBundle 'maxmellon/vim-jsx-pretty'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'chrisbra/csv.vim'
 
 " Required:
 call neobundle#end()
