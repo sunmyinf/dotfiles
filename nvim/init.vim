@@ -61,6 +61,10 @@ if dein#check_install()
   call dein#install()
 endif
 
+if len(dein#check_clean()) != 0
+  call map(dein#check_clean(), "delete(v:val, 'r')")
+endif
+
 "========================================
 "End dein Scripts
 "========================================
@@ -71,4 +75,8 @@ nnoremap <C-l> :BufExplorer<CR>
 " Setup for vim-go
 let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
 let g:go_highlight_methods = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
