@@ -62,7 +62,7 @@ if dein#check_install()
 endif
 
 if len(dein#check_clean()) != 0
-  call map(dein#check_clean(), "delete(v:val, 'rf')")
+  call map(dein#check_clean(), "delete(v:val, 'r')")
 endif
 
 "========================================
