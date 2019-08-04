@@ -61,6 +61,10 @@ if dein#check_install()
   call dein#install()
 endif
 
+if len(dein#check_clean()) != 0
+  call map(dein#check_clean(), "delete(v:val, 'rf')")
+endif
+
 "========================================
 "End dein Scripts
 "========================================
