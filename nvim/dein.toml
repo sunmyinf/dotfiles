@@ -29,7 +29,7 @@ repo = 'airblade/vim-gitgutter'
 repo = 'tpope/vim-endwise'
 
 [[plugins]]
-repo = 'Townk/vim-autoclose'
+repo = 'cohama/lexima.vim'
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
