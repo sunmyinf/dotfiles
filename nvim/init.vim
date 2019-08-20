@@ -47,6 +47,10 @@ if dein#load_state('~/.cache/dein')
   " Add or remove your plugins here like this:
   call dein#load_toml('~/.config/nvim/dein.toml', {'lazy': 0})
 
+  " tigrisのplugin追加のオプションのtoml上での記述が把握できなかったため
+  call dein#add('neovim/node-host', { 'build': 'npm install' })
+  call dein#add('billyvg/tigris.nvim', { 'build': './install.sh' })
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -80,3 +84,8 @@ let g:go_highlight_fields = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
+
+" Setup for tigris
+let g:tigris#enabled = 1
+let g:tigris#on_the_fly_enabled = 1
+let g:tigris#delay = 500
