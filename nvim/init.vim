@@ -1,6 +1,6 @@
 "使用するshellを設定
 if &shell =~# 'fish$'
-  set shell=sh
+  set shell=fish
 endif
 
 set number
@@ -24,6 +24,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+tnoremap <silent> <ESC> <C-\><C-n>
 
 "========================================
 "dein Scripts
