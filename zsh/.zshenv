@@ -12,3 +12,7 @@ fi
 
 # for neovim
 export XDG_CONFIG_HOME=$HOME/.config
+
+# for OS自作入門
+export PATH=/usr/local/opt/llvm/bin:$PATH
+export PATH=/usr/local/opt/binutils/bin:$PATH
