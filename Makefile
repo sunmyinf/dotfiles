@@ -1,3 +1,5 @@
+.PHONY: setup deploy
+
 DOTFILES_EXCLUDES := .DS_Store .git
 DOTFILES_TARGET := $(wildcard .??*)
 DOTFILES_DIR := $(PWD)
