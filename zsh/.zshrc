@@ -23,6 +23,10 @@ alias vim=nvim
 alias g='git'
 # alias gh="cd $(ghq list -p | peco)"
 
+function upstreamed() {
+  git fetch upstream -p && git switch $1 && git reset --hard upstream/$1
+}
+
 function gh() {
   local selected_dir=$(ghq list -p | peco)
   if [ -n "$selected_dir" ]; then
