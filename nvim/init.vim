@@ -1,8 +1,3 @@
-"使用するshellを設定
-if &shell =~# 'fish$'
-  set shell=fish
-endif
-
 set number
 set autoindent
 set tabstop=2         "タブを何文字の空白に置換するか
