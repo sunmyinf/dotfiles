@@ -38,3 +38,5 @@ function psgrep() {
   ps aux | grep -v grep | grep "USER.*COMMAND"
   ps aux | grep -v grep | grep $1
 }
+
+. /usr/local/opt/asdf/libexec/asdf.sh
